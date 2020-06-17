@@ -1,0 +1,549 @@
+/* Importing fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Michroma');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+* {
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(16, 9, 48);
+}
+
+body_table {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(16, 9, 48, 0.74);
+}
+
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
+}
+
+/* Navigation bar styles */
+
+.navbar {
+  padding: 10px;
+  margin: 10px;
+  font-style: normal;
+  font-weight: 700;
+  max-height: 100px;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d4dee7;
+  font-family: Michroma;
+}
+
+.navbar-nav {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d4dee7;
+  justify-content: right;
+  font-family: Michroma;
+}
+
+.nav-link {
+  font-family: Michroma;
+  font-size: 18px;
+}
+
+.dropdown-item {
+  font-size: 21px;
+  font-family: Comfortaa;
+  background-color: #15a5f8;
+}
+
+.navbar-text {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: right;
+  font-family: Michroma;
+}
+
+/* Adding styles to the aside, filters and table */
+.ufo-form {
+  margin-top: 80px;
+}
+
+.filters .panel-body {
+  padding: 0;
+}
+
+.panel-heading {
+  font-family: Michroma;
+  font-weight: 900;
+  color: #171c24;
+}
+
+.panel-footer {
+  font-family: Audiowide;
+  font-weight: 500;
+  background-color: #1b3146;
+  font-size: 22px;
+}
+
+label {
+  font-size: 16px;
+  font-family: Michroma;
+  color: #0b1218;
+  
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  color: #f2f5f7;
+  outline: none;
+}
+
+
+/* The styles for the parallax */
+.astros {
+  position: relative;
+  height: 500px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/moon-landing.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+
+/* Styles for the html classes within the different files */
+
+.astros h1 {
+  margin-top: 200px;
+  font-size: 0.1rem;
+  color: rgb(117, 5, 5);
+  font-weight: 900;
+  animation: title 1.5s forwards linear;
+  font-family: Audiowide, sans-serif;
+}
+
+.astros p {
+  font-size: 3rem;
+  opacity: 15;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+  color: rgb(14, 15, 85);
+  font-weight: 800;
+  text-shadow: 1px 1px 1px #2b2e3b, 1px 3px 3px #777474;
+  font-family: Michroma, sans-serif;
+
+}
+
+.btn {
+  font-family: Michroma;
+  font-weight: 600;
+  font-size: 18px;
+  color: #f2f5f8;
+  background-color: #171c24;
+}
+
+.btn1 {
+  font-family: Michroma;
+  font-weight: 600;
+  font-size: 18px;
+  color: #dae1e9;
+  background-color: #171d3f;
+}
+
+.row_0 {
+  background-color: rgb(16, 9, 48);
+  font-family: Michroma;
+  margin-right: 0.4in;
+  margin-left: 0;
+  margin-top: 0.5in;
+  margin-bottom: 0.5in;
+}
+
+.row_0 h1 {
+  color: whitesmoke;
+  text-indent: 0.4in;
+  font-weight: 900;
+  font-size: 30px;
+  
+}
+
+.row_0 p1 {
+  color: whitesmoke;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: Comfortaa;
+  margin-left: 40px;
+}
+
+.row_0 li {
+  color: whitesmoke;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: Comfortaa;
+  margin-left: 40px;
+}
+
+.row_0 ul {
+  color: whitesmoke;
+  font-size: 27px;
+  font-weight: 400;
+  font-family: Comfortaa;
+}
+
+.row_1 {
+  background-color: rgb(16, 9, 48);
+  margin-top: 0.5in;
+
+}
+
+.row_1 h3 {
+  color: rgb(17, 4, 46);
+  text-align: left;
+  font-size: 26px;
+  font-weight: 900;
+  font-family: Exo;
+}
+
+.row_1 p3 {
+  color: rgb(17, 4, 46);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: Exo;
+}
+
+.row {
+  background-color: rgb(16, 9, 48);
+  margin-left: 10px;
+}
+
+.row_2 {
+  background-color: rgb(25, 25, 49);
+  margin-left: 10px;
+}
+
+.row_index {
+  margin-top: 50px;
+}
+
+ul {
+  color: #f1f2f8;
+  font-size: 24px;
+  font-family: Comfortaa;
+}
+
+li {
+  color: #f1f2f8;
+  font-size: 22px;
+  font-family: Comfortaa;
+}
+
+p {
+  color: #0b1218;
+}
+
+.row_2 {
+  
+  background-color: white;
+}
+
+p3 {
+  color: #0b1218;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p4 {
+  color: #d1dce6;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+p5 {
+  color: #e6ebf0;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Comfortaa;
+}
+
+p6 {
+  color: #e6ebf0;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Comfortaa;
+  margin-left: 100px;
+}
+
+p7 {
+  color: #e6ebf0;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: Ubuntu;
+  margin-left: 1100px;
+  margin-top: 100px;
+}
+
+p8 {
+  color: #196ec4;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Comfortaa;
+}
+
+button{
+  background-color:rgb(175, 218, 226);
+  size: 24px;
+  font-size: 22px;
+  font-family: Exo;
+  font-weight: 600;
+}
+
+#my_dataviz {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.col-md-6 {
+  height: fit-content;
+}
+
+#bar-plot2 {
+  height: fit-content;
+}
+
+
+/* input placeholder color changes */
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8e979f;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8e979f;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8e979f;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8e979f;
+}
+
+.astros_1 {
+  position: relative;
+  height: 250px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/5b6494cd5c5e52e3568b4817.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.astros_1 h1 {
+  margin-top: 70px;
+  font-size: 2rem;
+  color: whitesmoke;
+  animation: title 1.5s forwards linear;
+  font-family: Audiowide, sans-serif;
+}
+
+.astros_1 p {
+  font-size: 2.5rem;
+  opacity: 15;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #555558, 1px 3px 3px #aba8a8;
+  font-family: Michroma, sans-serif;
+
+}
+
+.panel-heading {
+  font-size: 19px;
+  font-weight: 900;
+
+}
+
+.astros_2 {
+  position: relative;
+  height: 250px;
+  padding: 0px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/iss.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+/* Styles for the Fact Sheet Table */
+
+#table-area th {
+  text-align: left;
+  font-size: 21px;
+  font-family: Exo;
+  font-weight: 1100;
+  color: rgb(17, 8, 63);
+}
+
+#table-area th:first-child,
+#table-area th:nth-child(2),
+#table-area th:nth-child(6) {
+  min-width: 70px;
+}
+
+#table-area td {
+  text-align: left;
+  font-size: 16px;
+  font-family: Exo;
+  font-weight: 1100;
+  color: rgba(25, 25, 48, 0.842);
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+/* media queries which will only be activated at specific screen sizes */
+@media (max-width: 800px) {
+  #table-area td {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-link {
+    text-align: right;
+  }
+  #table-area thead {
+    display: none;
+  }
+
+  #table-area tr td:first-child {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: #c7d4e0;
+  }
+
+  #table-area tr td:last-child {
+    margin-bottom: 20px;
+  }
+
+  #table-area tr td:last-child::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    content: " ";
+    background: rgb(182, 197, 212);
+  }
+
+  #table-area td {
+    font-size: 1em;
+    font-family: Exo;
+  }
+
+  #table-area tbody td {
+    display: block;
+    text-align: left;
+  }
+
+  #table-area tbody td::before {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    content: attr(data-th);
+  }
+
+  .astros h1 {
+    animation: smaller-title 1.2s forwards linear;
+  }
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 7.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes smaller-title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes subtitle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.d3-tip {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  line-height: 1.5em;
+  color: rgb(12, 44, 44);
+  text-align: center;
+  text-transform: capitalize;
+  background: rgb(247, 244, 244);
+  border-radius: 4px;
+}
+
+#issMap {
+  height: 1400px;
+  width: 1800px;
+  text-align: left;
+  margin-left: 40px;
+}
