@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Astronauts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Spinnaker" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-md mr-auto navbar-dark" id="navbarText">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/Bubbles">Bubble Chart</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <div class="dropdown">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Facts about Astronauts
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="/pie_chart">Gender & Military Branch</a>
+                  <a class="dropdown-item" href="/Bubbles">Mission Groups</a>
+                  <a class="dropdown-item" href="/bar_chart">Space Flight Hours</a>
+                  <a class="dropdown-item" href="/fact_sheet">Fact Sheet</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href=""> <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="stars">
+      <div class="twinkling">
+        <div class="astros_1 text-center">
+          <h1></h1>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <mb></mb>
+    <div class="row_0">
+      <h1>Mission Groups</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <ul>Astronauts Selection Groups started in 1959, with Group 1. 
+        The last Group to be selected was Group 22 - "The Turtles", which was selected in 2017.  </ul>
+      <br>
+      <ul>The Bubbles chart displays the grouping 
+        of Astronauts and correspondent flight hours  </ul>
+      <br>
+      <li style="text-indent: 40px">The data shows that the groups and flight hours split into 4 categories</li>
+      <br>
+      <li style="text-indent: 40px">The majority of Astronauts are within the first 2 categories, between 0-2K Flight Hours 
+        and ~3-6K Flight Hours</li>
+        </p1>
+    </div>
+    <div class="row">
+      <div class="col-md-1">
+        
+      </div>
+      <div class="col-md-10">
+        <div id="bubble">
+          <!-- We appended our chart here. -->
+        </div>
+      </div>
+      <div class="col-md-1">
+       
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <span class="bottom">Project 2: Adeleke, Carrizales, Nguyen & Soto</span>
+    </footer>
+  </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
+<script src="static/js/bub_app.js"></script>
+</body>
+
+</html>
