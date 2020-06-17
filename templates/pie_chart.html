@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Astronauts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Spinnaker" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-md mr-auto navbar-dark" id="navbarText">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/pie_chart">Gender & Military Branch</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <div class="dropdown">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Facts about Astronauts
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="/pie_chart">Gender & Military Branch</a>
+                  <a class="dropdown-item" href="/Bubbles">Mission Groups</a>
+                  <a class="dropdown-item" href="/bar_chart">Space Flight Hours</a>
+                  <a class="dropdown-item" href="/fact_sheet">Fact Sheet</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href=""> <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="stars">
+      <div class="twinkling">
+        <div class="astros_1 text-center">
+          <h1></h1>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="row_0">
+      <h1>Astronauts' Gender and Background </h1>
+    </div>
+    <br>
+    <br> 
+    <div class="row_1 margi-top-0">
+      <div class="col-md-5">
+        <h3 style="text-indent: 5px; color:rgb(193, 219, 219)">Gender Pie Chart</h3>
+        <a href="H">
+          <img src="" alt="" class="rounded" style="width:85%;height:75%">
+        </a>
+        <div id="bar-plot1"></div>
+        <!-- We append our chart here  -->
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <h3 style="text-indent: 5px; color:rgb(193, 219, 219)">Branch Pie Chart</h3>
+        <a href="">
+          <img src="" alt="" class="rounded" style="width:85%;height:75%">
+        </a>
+        <div id="bar-plot2"></div>
+        <!-- We append our chart here  -->
+        <p3>Analysis of Branch Pie Chart </p3>
+      </div>
+    </div>
+    <div class="row_2">
+      <div class="col-md-5">
+        <ul>This dataset is as of 2009 and shows the gender gap for astronauts.
+          <br>
+          <li>14% of astronaut are female while a whooping 86% are male. </li>
+          <br>
+          <li>According to the article women in space, as of December
+            2019, of the 565 total space travelers, 65 have been women. </li>
+          <br>
+          <li>Perhaps men are more adventurous? </li>
+        </ul>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <ul>The dataset shows that several astronauts serviced in different arms of the government. 
+          A greater percentage 40% were Civilians while others served in branches of government like:</ul>
+          <br>
+          <li style="text-indent: 40px;">US Navy </li>
+          <li style="text-indent: 40px;">US Airforce</li>
+          <li style="text-indent: 40px;">US Marine</li>
+          <li style="text-indent: 40px;">US Army</li>
+          <li style="text-indent: 40px;">Coast Guard</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!--<footer class="footer">
+    <span class="bottom">Project 2: Adeleke, Carrizales, Nguyen & Soto</span>
+  </footer>-->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
+  <script src="static/js/piechart.js"></script>
+</body>
+
+</html>
