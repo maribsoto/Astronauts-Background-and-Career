@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astronauts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Spinnaker" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+
+    <!-- Leaflet JS & CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-md mr-auto navbar-dark" id="navbarText">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/Bubbles">Where is the ISS?</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+            </li>
+    
+            <li class="nav-item active">
+              <a class="nav-link" href="/fact_sheet">Fact Sheet <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="stars">
+      <div class="twinkling">
+        <div class="astros_2 text-center">
+          <h1></h1>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <mb></mb>
+    <div class="row_0">
+      <h1>Let's locate the ISS!</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <ul>The International Space Station (ISS) is a modular habitable satellite station in the low Earth orbit </ul>
+      <br>
+      <ul>This is the largest artificial object in space and the largest satellite in the low Earth orbit </ul>
+      <br>
+      <li style="text-indent: 40px">This Map shows the real-time location of the ISS!!</li>
+      <br>
+      <li style="text-indent: 40px">Quite cool, right? </li>
+      
+    </div>
+    <div class="row margin-left 0">
+        <p8>
+          Latitude: <span id="lat"></span><br />
+          Longitude: <span id="lon"></span>
+  
+        </p8>
+        <div id="issMap">
+          <!-- We appended our map here. -->
+        </div>
+    </div>
+    
+
+
+      <!-- API key -->
+      <script type="text/javascript" src="static/js/config.js"></script>
+      <!---Our JavaScript -->
+      <script type="text/javascript" src="static/js/iss_map.js"></script>
+    </div>
+</body>
+</html>
